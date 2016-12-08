@@ -17,5 +17,5 @@ res = session.get('https://whatismyipaddress.com/')
 soup = BS(res.text, "html5lib")
 ip = [a.text for a in soup.select('#section_left a')][0]
 
-client = Client(dsn = SENTRY_DNS)
+client = Client(dsn = SENTRY_DNS, name = DOCKER_NAME)
 client.captureMessage(ip)
