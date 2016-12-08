@@ -17,4 +17,4 @@ WORKDIR /IPscan
 
 RUN python setup.py install
 
-RUN python pyipscan.py
+CMD python pyipscan.py
