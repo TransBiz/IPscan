@@ -3,7 +3,7 @@ import requests
 from bs4 import BeautifulSoup as BS
 from raven import Client
 
-DOCKER_NAME = os.environ.get("DOCKER_NAME","test")
+DOCKER_NAME = os.environ.get("DOCKER_NAME","")
 SENTRY_DNS = os.environ.get("SENTRY_DNS", "http://9b27dfdbe05447f295676178f192ba55:b6c43dfe896d4bb8b1ecdcb5da1e621b@45.79.73.83:9000/6")
 
 session = requests.session()
