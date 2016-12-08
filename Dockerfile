@@ -7,6 +7,6 @@ MAINTAINER yvictor
 COPY . /IPscan
 WORKDIR /IPscan
 
-ENV PATH=root/miniconda2/bin
+ENV PATH=root/miniconda3/bin
 
 CMD ["python", "pyipscan.py"]
