@@ -1,12 +1,13 @@
 # Created on Dec, 8, 2016
 # @author: Yvictor
 
-FROM yvictor/miniconda3
+FROM samsam2310/python-crawler-base
 MAINTAINER yvictor
+
 
 COPY . /IPscan
 WORKDIR /IPscan
 
-ENV PATH=root/miniconda3/bin
+RUN python setup.py install
 
-RUN ["root/miniconda3/bin/python", "pyipscan.py"]
+RUN python pyipscan.py
