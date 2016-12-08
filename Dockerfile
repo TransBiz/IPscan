@@ -7,4 +7,4 @@ MAINTAINER yvictor
 COPY . /IPscan
 WORKDIR /IPscan
 
-RUN python pyipscan.py
+CMD python pyipscan.py
