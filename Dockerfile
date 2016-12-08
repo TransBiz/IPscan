@@ -7,4 +7,4 @@ MAINTAINER yvictor
 COPY . /IPscan
 WORKDIR /IPscan
 
-RUN ["/bin/bash", "-c", "python pyipscan.py"]
+CMD ["python", "pyipscan.py"]
