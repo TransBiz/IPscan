@@ -9,4 +9,4 @@ WORKDIR /IPscan
 
 ENV PATH=root/miniconda3/bin
 
-CMD ["python", "pyipscan.py"]
+CMD ["root/miniconda3/bin/python", "pyipscan.py"]
