@@ -4,7 +4,7 @@
 FROM yvictor/miniconda3
 MAINTAINER yvictor
 
-CMD git clone https://github.com/Yvictor/IPscan.git
-CMD cd home/IPscan
+COPY . /IPscan
+WORKDIR /IPscan
 
 RUN python pyipscan.py
