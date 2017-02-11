@@ -10,7 +10,7 @@ MAINTAINER yvictor
 # RUN wget https://bootstrap.pypa.io/get-pip.py -O- | python
 # install python-lxml
 # RUN apt-get update && apt-get install -y python-lxml
-
+RUN pip install -U certifi
 
 COPY . /IPscan
 WORKDIR /IPscan
